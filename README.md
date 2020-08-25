@@ -5,14 +5,14 @@ This framework is mainly used for data pair amount in big data.
 
 #### Installation
 ```ini
-pip install DataDock -i https://pypi.python.org/simple -U
+pip install DataDocking -i https://pypi.python.org/simple -U
 ```
 
 #### Uage
 1.DataLoadStatic
 - This is used to load static data variables, data variables cannot be modified
 ```python
-from DataDock import DataLoadStatic
+from DataDocking import DataLoadStatic
 class DataLoad(DataLoadStatic):
     temp = 20
     press = 30
@@ -28,7 +28,7 @@ dl = DataLoad()
     - process: data processing
     - teardown: Data finishing process
 ```python
-from DataDock import DataParse
+from DataDocking import DataParse
 class TempDataParse(DataParse):
     def setup(self):
         pass
@@ -43,7 +43,7 @@ class TempDataParse(DataParse):
 3.DataSave
 - Data storage, incoming ```sql_url_con```, such as ```postgresql+psycopg2://root:123@127.0.0.1:5432/demo```
 ```python
-from DataDock import DataSave
+from DataDocking import DataSave
 class TempDataSave(DataSave):
     pass
 
@@ -63,7 +63,7 @@ if __name__ == '__main__':
 ```
 
 #### Connection
-- author github: https://github.com/AlitaIcon/DataDock
+- author github: https://github.com/AlitaIcon/DataDocking
 
 - more information: 1906321518@qq.com
 
